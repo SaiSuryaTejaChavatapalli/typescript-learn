@@ -1,5 +1,24 @@
 {
+  "name": "typescript-learn",
+  "description": "Learning TypeScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
   "devDependencies": {
+    "lite-server": "^2.6.1",
     "typescript": "^5.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiSuryaTejaChavatapalli/typescript-learn.git"
+  },
+  "author": "Sai Surya Teja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaiSuryaTejaChavatapalli/typescript-learn/issues"
+  },
+  "homepage": "https://github.com/SaiSuryaTejaChavatapalli/typescript-learn#readme"
 }

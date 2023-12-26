@@ -75,3 +75,20 @@ for (let i of person.hobbies) {
 //---------------------------------------------------------
 //Any Type
 //const parks: any = "Test";
+//--------------------------------------------------------
+// function combine(a: number | string, b: number | string) {
+//   let result: string | number;
+//   if (typeof a === "number" && typeof b === "number") {
+//     result = a + b;
+//   } else {
+//     result = a.toString() + b.toString();
+//   }
+//   return result;
+// }
+
+// const combinedAges = combine(12, 8);
+// console.log("combinedAges", combinedAges);
+
+// const combinedNames = combine("Sai", "Surya");
+// console.log("combinedNames", combinedNames);
+//----------------------------------------------------------

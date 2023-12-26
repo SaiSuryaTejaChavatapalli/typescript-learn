@@ -117,3 +117,11 @@ for (let i of person.hobbies) {
 // const combinedNames = combine("Sai", "Surya", "as-text");
 // console.log("combinedNames", combinedNames);
 //-----------------------------------------------------------------
+//Type Aliases
+// type Combinable=number| string
+// type ConversionDescriptor="as-number" | "as-text"
+// function combine(
+//   a: Combinable,
+//   b: Combinable,
+//   resultConversion: ConversionDescriptor
+// ){}

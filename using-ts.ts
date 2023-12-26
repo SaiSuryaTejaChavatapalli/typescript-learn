@@ -125,3 +125,13 @@ for (let i of person.hobbies) {
 //   b: Combinable,
 //   resultConversion: ConversionDescriptor
 // ){}
+//-------------------------------------------------------------------
+// Function Return Types and void types
+// function adding(a: number, b: number): number {
+//   return a + b;
+// }
+
+// function addingPrint(a: number, b: number): void {
+//   console.log("Print", a + b);
+// }
+//----------------------------------------------------------------

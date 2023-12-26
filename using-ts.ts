@@ -36,3 +36,23 @@ for (let i of person.hobbies) {
   console.log(i.toUpperCase());
   console.log(i.map); // Gives Error
 }
+
+//-----------------------------------------------
+//Tuple Type
+
+// let person1: {
+//   name: string;
+//   age: number;
+//   hobbies: string[];
+//   role: [string, number];
+// } = {
+//   name: "Sai Surya Teja",
+//   age: 23,
+//   hobbies: ["cricket", "singing"],
+//   role: ["ADMIN", 3],
+// };
+
+//person1.role[1] = 2; // Allowed
+//person1.role[0] = 2; //Not Allowed because, it expects string and we are passing number
+//person1.role.push("Hi") //Allowed, Note this case.
+//person1.role=["a",3,3] // Not Allowed , it accepts only two length

@@ -159,6 +159,15 @@ for (let i of person.hobbies) {
 
 // let func:(a:number,b:number)=>number
 // func="2" //Gives Error
-// func=addingPrint // Gives Error
+// func=addingPrint // Gives Error, type definition doesn't match
 // func=adding // Doesn't give error, Because it satisfies the function type of two arguments of number type and return type is number
 //---------------------------------------------------------------------------------------------
+//Callback functions
+// function addAndCall(a: number, b: number, cb: (num: number) => void) {
+//   const res = a + b;
+//   cb(res);
+// }
+
+// addAndCall(1, 2, (num) => {
+//   console.log("Num", num);
+// });

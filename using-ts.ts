@@ -135,3 +135,30 @@ for (let i of person.hobbies) {
 //   console.log("Print", a + b);
 // }
 //----------------------------------------------------------------
+//Function as a type
+// function adding(a: number, b: number): number {
+//   return a + b;
+// }
+
+// function addingPrint(a: number, b: number): void {
+//   console.log("Print", a + b);
+// }
+
+// let func;
+// func = adding;
+// console.log(func(1, 2));
+// func = 2;
+// console.log(func(1, 3)); //Gives Error Because func is not a function
+// We can specify function type
+
+// let func: Function;
+// func = "2"; // Gives error because "2" is not a function
+// func = adding; // Doesn't give error , because adding is a function
+// func = addingPrint; // Doesn't give error , because addingPrint is a function
+//But we can add any function, so we have to more specific about function type
+
+// let func:(a:number,b:number)=>number
+// func="2" //Gives Error
+// func=addingPrint // Gives Error
+// func=adding // Doesn't give error, Because it satisfies the function type of two arguments of number type and return type is number
+//---------------------------------------------------------------------------------------------

@@ -76,6 +76,7 @@ for (let i of person.hobbies) {
 //Any Type
 //const parks: any = "Test";
 //--------------------------------------------------------
+//Union Types
 // function combine(a: number | string, b: number | string) {
 //   let result: string | number;
 //   if (typeof a === "number" && typeof b === "number") {
@@ -92,3 +93,27 @@ for (let i of person.hobbies) {
 // const combinedNames = combine("Sai", "Surya");
 // console.log("combinedNames", combinedNames);
 //----------------------------------------------------------
+//Literal Types
+// function combine(
+//   a: number | string,
+//   b: number | string,
+//   resultConversion: "as-number" | "as-text"
+// ) {
+//   let result: string | number;
+//   if (
+//     (typeof a === "number" && typeof b === "number") ||
+//     resultConversion === "as-number"
+//   ) {
+//     result = +a + +b;
+//   } else {
+//     result = a.toString() + b.toString();
+//   }
+//   return result;
+// }
+
+// const combinedAges = combine(12, 8, "as-number");
+// console.log("combinedAges", combinedAges);
+
+// const combinedNames = combine("Sai", "Surya", "as-text");
+// console.log("combinedNames", combinedNames);
+//-----------------------------------------------------------------

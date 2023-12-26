@@ -56,3 +56,20 @@ for (let i of person.hobbies) {
 //person1.role[0] = 2; //Not Allowed because, it expects string and we are passing number
 //person1.role.push("Hi") //Allowed, Note this case.
 //person1.role=["a",3,3] // Not Allowed , it accepts only two length
+//----------------------------------------------------------------------------------------------
+//Enums
+// enum Roles {
+//   ADMIN,
+//   USER,
+// }
+// console.log(Roles.ADMIN);
+// console.log(Roles.USER);
+// enum Roles {
+//   ADMIN=6,
+//   USER,
+// }
+//enum Roles {
+//   ADMIN=6,
+//   USER="name",
+// }
+//---------------------------------------------------------

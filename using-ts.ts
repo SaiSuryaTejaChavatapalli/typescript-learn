@@ -73,3 +73,5 @@ for (let i of person.hobbies) {
 //   USER="name",
 // }
 //---------------------------------------------------------
+//Any Type
+//const parks: any = "Test";

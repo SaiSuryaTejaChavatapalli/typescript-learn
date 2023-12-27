@@ -170,4 +170,25 @@ for (let i of person.hobbies) {
 
 // addAndCall(1, 2, (num) => {
 //   console.log("Num", num);
+//num type doesn't need to type here
 // });
+//-------------------------------------------------------------------
+//Unknown Type
+// let userInput1: any;
+// userInput1 = "b"; // Doesn't give error, because anyType is flexible
+// //similarly
+// let userInput: unknown;
+
+// userInput = 2;
+// userInput = { name: "sst" };
+// //With unknown we can assign any type, It means the is not known yet,
+// //it might get different type everytime
+
+// let userName: string;
+
+// userName = userInput1; // Doesn't give error, because anyType can be assigned to string.
+// userName = userInput; // Gives error, because unknown can't be assigned to string
+// userInput = "a";
+// if (typeof userInput === "string") {
+//   userName = userInput;
+// } // We Have to specify if check if unknown has to be assign to the string.

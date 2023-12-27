@@ -1,7 +1,9 @@
-function addAndCall(a, b, cb) {
-    var res = a + b;
-    cb(res);
+"use strict";
+function generateError(message, errorCode) {
+    throw {
+        message,
+        errorCode,
+    };
 }
-addAndCall(1, 2, function (num) {
-    console.log("Num", num);
-});
+const result = generateError("An Error Occured", 500);
+console.log("Error return value", result);

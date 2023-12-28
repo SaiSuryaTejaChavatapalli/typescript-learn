@@ -1,24 +1,24 @@
+"use strict";
 //@ts-nocheck
-const num1 = document.getElementById("num1")! as HTMLInputElement;
-const num2 = document.getElementById("num2")! as HTMLInputElement;
-const button = document.querySelector("button")! as HTMLButtonElement;
-
-const addition = (a: number, b: number) => {
-  return a + b;
+const num1 = document.getElementById("num1");
+const num2 = document.getElementById("num2");
+const button = document.querySelector("button");
+const addition = (a, b) => {
+    return a + b;
 };
 button.addEventListener("click", () => {
-  console.log(addition(+num1.value, +num2.value));
+    console.log(addition(+num1.value, +num2.value));
 });
 //---------------------------------------------------------------------------------------------------
-function add(a: number, b: number, showResult: boolean, phrase: string) {
-  const result = a + b;
-  if (showResult) {
-    console.log(phrase + result);
-  } else {
-    return result;
-  }
+function add(a, b, showResult, phrase) {
+    const result = a + b;
+    if (showResult) {
+        console.log(phrase + result);
+    }
+    else {
+        return result;
+    }
 }
-
 const number1 = 5;
 const number2 = 2.8;
 const printResult = true;
@@ -26,21 +26,18 @@ const resultPhrase = "Result is: ";
 add(number1, number2, printResult, resultPhrase);
 //---------------------------------------------------------------
 let person = {
-  name: "Sai Surya Teja",
-  age: 23,
-  hobbies: ["cricket", "singing"],
+    name: "Sai Surya Teja",
+    age: 23,
+    hobbies: ["cricket", "singing"],
 };
 console.log(person);
-
 //Automatically inferes the string type in object
 for (let i of person.hobbies) {
-  console.log(i.toUpperCase());
-  console.log(i.map); // Gives Error
+    console.log(i.toUpperCase());
+    console.log(i.map); // Gives Error
 }
-
 //-----------------------------------------------
 //Tuple Type
-
 // let person1: {
 //   name: string;
 //   age: number;
@@ -52,7 +49,6 @@ for (let i of person.hobbies) {
 //   hobbies: ["cricket", "singing"],
 //   role: ["ADMIN", 3],
 // };
-
 //person1.role[1] = 2; // Allowed
 //person1.role[0] = 2; //Not Allowed because, it expects string and we are passing number
 //person1.role.push("Hi") //Allowed, Note this case.
@@ -87,10 +83,8 @@ for (let i of person.hobbies) {
 //   }
 //   return result;
 // }
-
 // const combinedAges = combine(12, 8);
 // console.log("combinedAges", combinedAges);
-
 // const combinedNames = combine("Sai", "Surya");
 // console.log("combinedNames", combinedNames);
 //----------------------------------------------------------
@@ -111,10 +105,8 @@ for (let i of person.hobbies) {
 //   }
 //   return result;
 // }
-
 // const combinedAges = combine(12, 8, "as-number");
 // console.log("combinedAges", combinedAges);
-
 // const combinedNames = combine("Sai", "Surya", "as-text");
 // console.log("combinedNames", combinedNames);
 //-----------------------------------------------------------------
@@ -131,7 +123,6 @@ for (let i of person.hobbies) {
 // function adding(a: number, b: number): number {
 //   return a + b;
 // }
-
 // function addingPrint(a: number, b: number): void {
 //   console.log("Print", a + b);
 // }
@@ -140,24 +131,20 @@ for (let i of person.hobbies) {
 // function adding(a: number, b: number): number {
 //   return a + b;
 // }
-
 // function addingPrint(a: number, b: number): void {
 //   console.log("Print", a + b);
 // }
-
 // let func;
 // func = adding;
 // console.log(func(1, 2));
 // func = 2;
 // console.log(func(1, 3)); //Gives Error Because func is not a function
 // We can specify function type
-
 // let func: Function;
 // func = "2"; // Gives error because "2" is not a function
 // func = adding; // Doesn't give error , because adding is a function
 // func = addingPrint; // Doesn't give error , because addingPrint is a function
 //But we can add any function, so we have to more specific about function type
-
 // let func:(a:number,b:number)=>number
 // func="2" //Gives Error
 // func=addingPrint // Gives Error, type definition doesn't match
@@ -168,7 +155,6 @@ for (let i of person.hobbies) {
 //   const res = a + b;
 //   cb(res);
 // }
-
 // addAndCall(1, 2, (num) => {
 //   console.log("Num", num);
 //num type doesn't need to type here
@@ -179,14 +165,11 @@ for (let i of person.hobbies) {
 // userInput1 = "b"; // Doesn't give error, because anyType is flexible
 // //similarly
 // let userInput: unknown;
-
 // userInput = 2;
 // userInput = { name: "sst" };
 // //With unknown we can assign any type, It means the is not known yet,
 // //it might get different type everytime
-
 // let userName: string;
-
 // userName = userInput1; // Doesn't give error, because anyType can be assigned to string.
 // userName = userInput; // Gives error, because unknown can't be assigned to string
 // userInput = "a";

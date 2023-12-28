@@ -1,2 +1,5 @@
-const names = "Sai Surya Teja";
-console.log(names);
+const buttonTest = document.querySelector("button")!;
+
+buttonTest.addEventListener("click", () => {
+  console.log("Button clicked");
+});
